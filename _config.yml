@@ -3,12 +3,13 @@ title: SNARC Consulting
 header-img: img/home-bg.jpg
 email: sales@snarc.com
 copyright_name: SNARC Consulting Limited
+company_number: 10623724
 description: "Description"
 baseurl: ""
 url: "http://www.snarc.com"
-twitter_username: ""
-github_username: ""
-facebook_username: ""
+#twitter_username: ""
+#github_username: ""
+#facebook_username: ""
 email_username:  sales@snarc.com
 
 # Google Analytics
