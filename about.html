@@ -4,18 +4,11 @@ title: "About"
 description: "the team"
 header-img: "img/about-bg.jpg"
 ---
-{% for profile in site.profiles %}
-  <h2>{{ profile.name }}</h2>
-  <img src="{{profile.picture}}"/>
 
-  <p>Performed by {{ profile.artist }}{% if profile.director %}, directed by {{ profile.director }}{% endif %}</p>
-  {% for work in profile.works %}
-    <h3>{{ work.title }}</h3>
-    <p>Composed by {{ work.composer }}</p>
-    <ul>
-    {% for track in work.tracks %}
-      <li>{{ track.title }} ({{ track.duration }})</li>
-    {% endfor %}
-    </ul>
-  {% endfor %}
+{% for profile in site.profiles %}
+<div class="float: left; text-align: center;">
+  <a href="{{ profile.url }}">
+    <img src="/{{profile.picture}}"/><h2>{{ profile.name }}</h2>
+  </a>
+</div>
 {% endfor %}
